@@ -169,6 +169,7 @@ a {
 #signup .form-group input[type="text"] {
     padding: 5px;
     width: 25vw;
+    color: white
 }
 
 #signup .button {

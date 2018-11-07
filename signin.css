@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+
+
+html, body {
+    background-color: white;
+    margin: 0;
+    font-family: Raleway, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+    padding:0;
+  }
+
+  /*======================================*/
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    color: white;
+    font-family: Raleway, sans-serif;
+    /* border: lightgray solid 1px; */
+}
+
+/*======================================*/
+
+
+.container {
+    z-index: 2;
+    min-width: 100vw;
+
+    height:100vh;
+    display: grid;
+    
+
+    grid-gap: 0;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+
+    grid-template-areas:
+        "b h h h h h h h h ha hs hl"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fs fs fs f f f f f f fq fl fc"; 
+}
+
+
+.header {
+    grid-area: h;
+    background: #50504f;
+}
+
+.about {
+    grid-area: ha;
+    background: #50504f;
+}
+.services {
+    grid-area: hs;
+    background: #50504f;
+}
+.signin {
+    grid-area: hl;
+    background: #50504f;
+}
+.brand {
+    grid-area: b;
+    background: #50504f;
+}
+.form {
+    grid-area:fo;
+}
+.copyright {
+    grid-area: f;
+    background: #50504f;
+}
+.footer {
+    grid-area: fs;
+    background: #50504f;
+}
+.faq {
+    grid-area: fq;
+    background: #50504f;
+}
+.privacy {
+    grid-area: fl;
+    background: #50504f;
+}
+.contact {
+    grid-area: fc;
+    background: #50504f;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.signin a {
+    color: #fff942;
+    border: #fff942 solid 1px;
+    border-radius: 5px;
+    padding: 0 .3rem;
+}
+
+.signin a:hover {
+    color:#fff942;
+    border:#fff942 solid 1px;
+}
+
+
+
+.brand h1 a {
+    font-size: 1.7rem;
+    color: #fff942;
+}
+
+
+.copyright {
+    margin-left: 0;
+}
+
+
+#signup {
+    padding:20px;
+    margin: 50px 75px;
+}
+
+#signup h2 {
+    color: #50504f;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+#signup .form-group{
+    margin: 10px 0;
+}
+#signup .form-group{
+    margin: 10px;
+}
+
+#signup .form-group input{
+    text-align: center;
+    background: #50504f;
+    border: none;
+    border-radius: 5px;    
+}
+
+
+#signup .form-group input::placeholder{
+    color:rgb(169, 173, 177);
+
+}
+
+
+#signup .form-group input[type="text"] {
+    padding: 5px;
+    width: 25vw;
+}
+
+#signup .button {
+    background-color: #50504f;
+    color: #fff942;
+    padding: 5px;
+    margin: 10px 10px;
+    border: solid #fff942;
+    border-radius: 5px;
+    width: 25vw;
+
+}
+
+#signup .button:hover {
+    background-color: #fff942;
+    color: #50504f;
+    border: solid #50504f;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(13, 1fr);
+    
+        grid-template-areas:
+        "b b h h h h h ha ha hs hl hl"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "fo fo fo fo fo fo fo fo fo fo fo fo"
+        "f f f f f f fs fs fq fl fc fc"; 
+    }
+
+    #signup .form-group input[type="text"] {
+        width: 50vw;
+    }
+
+    #signup .button {
+        width: 50vw;
+    }
+
+
+
+
+}
+
+
